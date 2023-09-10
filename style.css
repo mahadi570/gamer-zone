@@ -4,6 +4,8 @@ body {
     font-family: 'Work Sans', sans-serif;
     color: #0B0223;
     font-size: 18px;
+    max-width: 1450px;
+    margin: 0 auto;
 }
 
 .primary-text {
@@ -18,11 +20,19 @@ body {
     border: 0;
     font-weight: 600;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .secondary-btn {
     margin-left: 30px;
     background-color: #4EC5F7;
+    font-size: 20px;
+}
+
+i {
+    color: plum;
+    padding-right: 10px;
+    height: 24px;
 }
 
 nav {
@@ -77,8 +87,8 @@ nav li:hover {
     transition: .5s;
 }
 
-.banner, .second-banner {
-    /* background: url(images/p1.png); */
+.banner,
+.second-banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,12 +100,16 @@ nav li:hover {
     margin: 0;
 }
 
-.banner-text .special-text {
+.banner-text .big-text {
+    font-size: 95px;
+}
+
+.special-text {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 95px;
+    font-size: 48px;
     margin: 0;
 }
 
@@ -107,7 +121,53 @@ nav li:hover {
     width: 100%;
 }
 
-.second-banner .banner-text{
+.second-banner .banner-text {
     text-align: right;
     width: 35%;
+}
+
+.banner-text p {
+    margin: 24px auto;
+    color: #534C64;
+    min-width: 520px;
+}
+
+.banner-text .regular {
+    font-weight: 500;
+}
+
+.banner-text h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #534C64;
+}
+
+.second-banner {
+    background: url(images/p1.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+}
+
+.online-games h5 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+}
+
+.online-games p {
+    text-align: center;
+}
+
+.video-cart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-cart {
+    width: 340px;
+}
+
+.video-cart-container img {
+    height: 370px;
 }
