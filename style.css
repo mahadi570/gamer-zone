@@ -123,13 +123,12 @@ nav li:hover {
 
 .second-banner .banner-text {
     text-align: right;
-    width: 35%;
 }
 
 .banner-text p {
     margin: 24px auto;
     color: #534C64;
-    min-width: 520px;
+    max-width: 520px;
 }
 
 .banner-text .regular {
@@ -159,15 +158,54 @@ nav li:hover {
     text-align: center;
 }
 
-.video-cart-container {
-    display: flex;
-    justify-content: space-between;
+.video-cart-container, .play-instant {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
-.video-cart {
-    width: 340px;
+.video-cart img:hover {
+    opacity: 15%;
+    transition: .3s;
+    border: 4px solid black;
+    border-radius: 5%;
+    cursor: pointer;
 }
 
-.video-cart-container img {
-    height: 370px;
+.play-instant{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 120px;
+}
+
+.play-instant .text{
+    text-align: right;
+    width: 80%;
+    margin-right: 400px;
+}
+
+.play-instant .text h5{
+    font-size: 48px;
+    margin: 0;
+}
+
+.play-instant .text p{
+    display: inline-block;
+    width: 350px;
+    color: #534C64;
+}
+
+.play-instant .img{
+    height: 630px;
+}
+
+.play-instant .img img{
+    height: 100%;
+}
+
+.overlaping-img{
+    position: relative;
+    transform: translate(450px, -270px);
 }
