@@ -29,12 +29,6 @@ body {
     font-size: 20px;
 }
 
-i {
-    color: plum;
-    padding-right: 10px;
-    height: 24px;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -74,10 +68,11 @@ nav li {
 .nav-link {
     display: flex;
     align-items: center;
+    height: 45px;
 }
 
 nav li img {
-    height: 30px;
+    height: 20px;
     margin-left: 10px;
 }
 
@@ -236,6 +231,7 @@ nav li:hover {
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: 600;
 }
 
@@ -319,3 +315,179 @@ footer .nav-logo {
     color: #fff;
     font-size: 40px;
 }
+
+
+@media screen and (max-width: 576px) {
+    
+    .primary-btn{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .special-text, .banner-text .big-text{
+        font-size: 40px;
+    }
+    .nav-logo, .nav-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav,
+    nav ul,
+    .banner,
+    .second-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .banner-text h2 {
+        font-size: 35px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .banner-text p{
+        width: 350px;
+        margin: 10px auto;
+    }
+
+    .banner-text button{
+        margin-left: 75px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 90%;
+    }
+
+    .second-banner {
+        width: 500px;
+    }
+
+    .second-banner img {
+        width: 500px;
+    }
+    .second-banner .banner-text{
+        text-align: center;
+    }
+    .banner-text .regular{
+        font-size: 25px;
+    }
+    .banner-text h4{
+        font-size: 30px;
+    }
+    .second-banner .primary-btn{
+        margin-left: 0;
+    }
+    .online-games h5, .online-games .special-text{
+        font-size: 30px;
+    }
+
+    .video-cart-container, .play-instant, .career{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video-cart{
+        width: 350px;
+        margin: auto;
+    }
+    .video-cart img{
+        height: 300px;
+    }
+    .play-instant{
+        width: 530px;
+        height: 750px;
+        margin: 0;
+        padding: 0;
+    }
+    .play-instant .text{
+        text-align: center;
+        width: 500px;
+    }
+    .play-instant .img {
+        width: 100%;
+    }
+    .play-instant .img img{
+        width: 350px;
+        height: auto;
+        margin-left: 50px;
+    }
+    .overlaping-img{
+        transform: translate(-300px, -420px);
+    }
+    .overlaping-img img{
+        width: 50%;
+    }
+    .career{
+        width: 530px;
+        padding: 0;
+    }
+    .career-heading{
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        margin-left: -150px;
+    }
+    .career p{
+        width: 480px;
+        padding: 0 10px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .container{
+        justify-content: center;
+    }
+    .left-text, .right-text{
+        font-size: 15px;
+        width: 280px;
+    }
+    .img img{
+        width: 500px;
+    }
+    .footer-top{
+        grid-template-columns: repeat(3, 1fr);
+        width: 500px;
+        font-size: 12px;
+    }
+    .footer-top img{
+        height: 35px;
+    }
+    .footer-text-ul,
+    .footer-icon-ul,
+    .footer-last-ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-items: center;
+        margin-bottom: 30px;
+    }
+    .footer-text-ul li{
+        margin-bottom: 30px;
+    }
+    .footer-last-ul{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+/* I can't do anymore
+almost 3 days i was struggling with this assignment
+it was so hard for me :(  */
